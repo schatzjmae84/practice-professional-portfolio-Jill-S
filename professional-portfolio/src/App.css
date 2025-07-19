@@ -1,0 +1,73 @@
+h1 {
+    color: rgb(5, 5, 94);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 15px;
+}
+
+h2 {
+    color: rgb(5, 5, 94);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+body {
+    background-image: url("./assets/background-pic.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(233, 218, 12);
+}
+
+img {
+    float: left;
+    padding: 15px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    color: rgb(5, 5, 94);
+}
+
+p {
+    padding: 15px;
+    font-size: large;
+    color: rgb(5, 5, 94);
+
+}
+
+table {
+    padding: 15px;
+    color: rgb(5, 5, 94);
+    background-color: rgb(235, 226, 100);
+}
+
+th {
+    background-color: rgb(5, 5, 94);
+    color: white;
+    text-align: center;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+tr {
+    text-align: center;
+    width: 88px;
+    padding: 8px;
+}
+
+form {
+    width: 88px;
+    padding: 15px;
+    color: rgb(5, 5, 94);
+}
+
+.form-submit {
+  margin: 15px;
+  padding: 10px;
+}
+
