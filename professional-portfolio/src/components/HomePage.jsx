@@ -25,7 +25,8 @@ const HomePage = () => {
         <div className="home-page">
             <header>
                 <h1><strong>Jillianne Schatz</strong></h1>
-                <h2><strong>Full Stack Software Developer | JavaScript | React | Java | Spring Boot | MySQL Workbench</strong></h2>
+                <h2><strong>Full Stack Software Developer</strong></h2>
+                <h2> JavaScript, React | Java, Spring Boot | MySQL Workbench</h2>
                 <hr />
             </header>
             <div className="nav-bar">
@@ -57,6 +58,13 @@ const HomePage = () => {
                             <td>LaunchCode Unit 1 Front-end SPA Project</td>
                             <td>This app is geared towards dog owners in the city that are looking for some “Doggy Destinations” where they can be with their pup, still have fun, and maybe meet other dog owners.</td>
                             <td><Link to="https://doggy-destination.netlify.app/">The Doggy Destination App</Link></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                For more achievements, experience, and my resume, please click the following link:
+                            </td>
+                            <td><Link to="/resume">Jillianne Schatz | Resume</Link>
+                            </td>
                         </tr>
                     </table>
                 </section>
