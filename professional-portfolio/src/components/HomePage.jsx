@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import pic from '../assets/profile-pic.jpg'; 
 
@@ -23,12 +23,6 @@ const HomePage = () => {
     return (
 
         <div className="home-page">
-            <header>
-                <h1><strong>Jillianne Schatz</strong></h1>
-                <h2><strong>Full Stack Software Developer</strong></h2>
-                <h2> JavaScript, React | Java, Spring Boot | MySQL Workbench</h2>
-                <hr />
-            </header>
             <div className="nav-bar">
                 <div>
                     <img className="profile-pic" src={pic} width="200" height="225" alt="My Profile Picture" />
