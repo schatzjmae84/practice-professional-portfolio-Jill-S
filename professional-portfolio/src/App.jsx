@@ -3,6 +3,7 @@ import HomePage from './components/HomePage';
 import ResumePage from './components/ResumePage';
 import './App.css'
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -16,7 +17,8 @@ function App() {
         <Route path="/resume" element={<ResumePage />} />
       </Routes> 
      </Router>   
-     </main>       
+     </main> 
+     <Footer />      
     </>
   )
 }
