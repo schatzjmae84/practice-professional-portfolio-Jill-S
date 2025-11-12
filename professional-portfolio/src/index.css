@@ -18,6 +18,8 @@
 .brand {
 	font-weight: 700;
 	color: rgb(191, 194, 3);
+	background-color: black;
+	font-size: x-large;
 }
 .main-nav {
 	display: flex;
@@ -31,14 +33,14 @@
 
 }
 .main-nav a:hover {
-    background-color:tomato;
+    background-color:rgb(110, 4, 102);
 }
 .hamburger {
 	display: none;
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	color: rgb(5,5,94);
+	color: rgb(191, 194, 3);
 }
 
 /* Small screens */
@@ -65,4 +67,25 @@
 	.hamburger {
 		display: block;
 	}
+}
+
+/* Brand link: make the "JS" brand yellow and remove default underline */
+.site-header .brand a,
+.site-header .brand a:visited {
+  color: rgb(191, 194, 3); /* yellow-ish */
+  text-decoration: none; /* remove underline */
+  display: inline-block; /* keeps padding/line-height predictable */
+}
+
+.site-header .brand a:hover,
+.site-header .brand a:focus {
+  text-decoration: none;
+  color: #ffea00; /* brighter on hover/focus for visibility */
+  outline: none;
+}
+
+/* Accessibility: keep a visible focus state for keyboard users */
+.site-header .brand a:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 234, 0, 0.18);
+  border-radius: 4px;
 }

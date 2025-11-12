@@ -7,12 +7,13 @@ const Header = () => {
 	return (
 		<header className="site-header">
 			<div className="header-inner">
-				<div className="brand" style={{ background: "rgba(7, 7, 1, 1)" }}>Jillianne Schatz - Full Stack Software Developer
-                </div>
+				<div className="brand">
+					<a href="/">JS</a>
+				</div>
 				<nav className={`main-nav ${open ? "open" : ""}`}>
-					<a href="/">Main</a>
+					<a href="/about">About</a>
 					<a href="/resume">Resume</a>
-					<a href="#projects">Projects</a>
+					<a href="/projects">Projects</a>
 					<a href="/contact">Contact</a>
 				</nav>
 
