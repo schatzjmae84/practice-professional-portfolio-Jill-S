@@ -4,6 +4,8 @@
 	position: sticky;
 	top: 0;
 	z-index: 20;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: larger;
 }
 .header-inner {
 	display: flex;
@@ -15,14 +17,14 @@
 }
 .brand {
 	font-weight: 700;
-	color: rgb(233, 199, 9);
+	color: rgb(191, 194, 3);
 }
 .main-nav {
 	display: flex;
 	gap: 16px;
 }
 .main-nav a {
-	color: rgb(233, 199, 9);
+	color: rgb(191, 194, 3);
     font-weight: bold;
 	text-decoration: none;
 	padding: 8px 16px;

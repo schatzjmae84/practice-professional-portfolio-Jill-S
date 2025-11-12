@@ -1,3 +1,10 @@
+.about-me {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 15px;
+}
+
 h1 {
     color: rgb(5, 5, 94);
     text-align: left;
@@ -11,7 +18,7 @@ h2 {
 }
 
 body {
-    background-image: url("./assets/abstract-background-pic.jpg");
+    background-image: url("./assets/portfolio-background-pic.jpg");
     background-attachment: scroll;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +30,10 @@ header {
 
 img {
     float: left;
-    padding: 15px;
+    padding: 25px;
+    border-style: solid;
+    border-color: white;
+    margin: 25px;
 }
 
 h3 {
@@ -32,30 +42,10 @@ h3 {
     padding: 15px;
 }
 
-p {
+.site-footer {
     padding: 15px;
     font-size: large;
     color: rgb(5, 5, 94);
-
-}
-
-table {
-    padding: 15px;
-    color: rgb(5, 5, 94);
-    background-color: rgb(235, 226, 100);
-}
-
-th {
-    background-color: rgb(5, 5, 94);
-    color: white;
-    text-align: center;    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-tr {
-    text-align: center;
-    width: 88px;
-    padding: 8px;
 }
 
 form {

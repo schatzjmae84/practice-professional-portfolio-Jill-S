@@ -7,8 +7,7 @@ const Header = () => {
 	return (
 		<header className="site-header">
 			<div className="header-inner">
-				<div className="brand">Jillianne Schatz <br></br> 
-                    Full Stack Software Developer
+				<div className="brand" style={{ background: "rgba(7, 7, 1, 1)" }}>Jillianne Schatz - Full Stack Software Developer
                 </div>
 				<nav className={`main-nav ${open ? "open" : ""}`}>
 					<a href="/">Main</a>
