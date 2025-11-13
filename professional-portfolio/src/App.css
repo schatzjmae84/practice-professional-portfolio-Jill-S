@@ -64,6 +64,10 @@ h3 {
     text-decoration: none;
 }
 
+.social-icon {
+    float: right;
+}
+
 form {
     width: 88px;
     padding: 15px;
