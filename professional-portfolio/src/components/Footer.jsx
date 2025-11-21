@@ -4,20 +4,23 @@ const Footer = () => {
 
     return (
         <footer className="site-footer"> 
-            <div>         
-                &copy; 2025 Professional Portfolio | Jillianne Schatz                                 
-                <SocialIcon 
-                    url="https://www.linkedin.com/in/jillianne-schatz" 
-                    style={{ height: 35, width: 35, marginRight: '10px' }} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                />
-                <SocialIcon 
-                    url="https://github.com/schatzjmae84" 
-                    style={{ height: 35, width: 35, marginRight: '10px' }} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                />
+            <div className="footer-inner">        
+                <div className="footer-text">&copy; 2025 Professional Portfolio | Jillianne Schatz</div>
+
+                <div className="socials">
+                    <SocialIcon 
+                        url="https://www.linkedin.com/in/jillianne-schatz" 
+                        className="social-icon"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                    />
+                    <SocialIcon 
+                        url="https://github.com/schatzjmae84" 
+                        className="social-icon"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                    />
+                </div>
             </div>
         </footer>
     )
