@@ -11,7 +11,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 1100px;
+	max-width: 1275px;
 	margin: 0 auto;
 	padding: 8px 16px;
 }
@@ -19,7 +19,7 @@
 	font-weight: 700;
 	color: rgb(191, 194, 3);
 	background-color: black;
-	font-size: x-large;
+	font-size: xx-large;
 }
 .main-nav {
 	display: flex;

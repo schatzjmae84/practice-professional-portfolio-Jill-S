@@ -2,7 +2,9 @@ const AboutPage = () => {
     return (
         <div className="about-me">                
                 <h3>About Me</h3>
-                <p>Hello!  My name is Jill Schatz, and I am embarking on a new journey as a software developer.  I am from Ste. Genevieve, Missouri, and my husband and I have been living here in St. Louis for 5 years.  Since we moved here, we have had two crazy kids that are now 4 and a half and 1!  I am on the hunt for a new job where I can utilize my skills and passion for coding, and also put my creativity to good use!  My previous job was that of a Health and Wellness Director at a local YMCA where I supervised all of our personal trainers, group exercise instructors, and fitness floor staff.  The YMCA was a wonderful place to work and grow as a part of team that strove to help our community.  I look forward to getting the opportunity to work for a new company and joining a new team soon!</p>
+                <p>Hello!  My name is Jill Schatz, and I am embarking on a new journey as a software developer.  This past summer I completed a LaunchCode Software Development course, where I learned valuable skills in web development, including JavaScript, React, Java, Springboot, and MySQL.  I am excited to apply my knowledge and creativity to build engaging and user-friendly applications.  <br />
+                <br />
+                Throughout my teaching and personal training experiences, I have always been passionate about using my innate problem solving skills to improve people's lives.  I believe that my unique background combined with the diverse job opportunities that I have been given, will allow me to bring a fresh perspective to any team I join.  I am eager to tackle my new journey head-on!  I also look forward to collaborating with others and to contributing to meaningful projects that make a difference within the community.</p>
             </div> 
     );
 };
