@@ -1,4 +1,4 @@
-.about-me {
+.about-me, .projects-page{
     background-color: rgb(26, 24, 24);
     color: rgb(97, 136, 243);
     padding: 15px;
@@ -47,10 +47,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: rgb(233, 218, 12);
-}
-
 h3 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
     color: rgb(191, 194, 3);
@@ -83,10 +79,23 @@ form {
   padding: 10px;
 }
 
-.resume-page {
-    background-color: rgb(194, 222, 248);
-    opacity: 0.70;
-    padding: 15px;
+.resume-btn {
+    margin: 15px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: rgb(191, 194, 3);
+	background-color: black;
+}
+
+.project-image-container {
+    color: white;
+    text-align: center;
+    margin: 15px;
+    opacity: 0.9;
+    
 }
 
 /*Google Font Styling*/

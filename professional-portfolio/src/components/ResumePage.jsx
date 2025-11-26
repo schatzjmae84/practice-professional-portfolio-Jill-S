@@ -8,9 +8,6 @@ export default function ResumePage() {
 
         <div className="resume-page">
             <h2>{resume}</h2>
-            <header>
-                <h1>Jillianne Schatz</h1>
-            </header>
 
             {/* Resume link/button - places the resume at /resume.pdf in the public folder */}
             <div className="resume-actions">
@@ -23,5 +20,4 @@ export default function ResumePage() {
             </div>
         </div>
     );
-
 };

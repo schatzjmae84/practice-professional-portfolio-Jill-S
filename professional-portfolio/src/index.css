@@ -1,7 +1,7 @@
 /* Header and responsive nav */
 .site-header {
     background: none;	
-	position: sticky;
+	position: static;
 	top: 0;
 	z-index: 20;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
