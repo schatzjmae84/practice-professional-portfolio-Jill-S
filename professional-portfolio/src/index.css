@@ -24,13 +24,18 @@
 .main-nav {
 	display: flex;
 	gap: 16px;
+	z-index: 10000;
+	position: relative;
+	pointer-events: auto;
 }
 .main-nav a {
 	color: rgb(191, 194, 3);
     font-weight: bold;
 	text-decoration: none;
 	padding: 8px 16px;
-
+	z-index: 10000;
+	position: relative;
+	pointer-events: auto;
 }
 .main-nav a:hover {
     background-color:rgb(110, 4, 102);
@@ -41,6 +46,8 @@
 	border: none;
 	cursor: pointer;
 	color: rgb(191, 194, 3);
+	z-index: 10001;
+	position: relative;
 }
 
 /* Small screens */

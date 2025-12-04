@@ -12,6 +12,7 @@
     font-style: normal;
     font-size: x-large;
     opacity: 0.9;
+    border-radius: 5px;
 }
 
 .home-page {
@@ -26,6 +27,7 @@
     border-color: white;
     margin: 25px;
     padding: 25px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -90,6 +92,15 @@ form {
 	background-color: black;
 }
 
+.resume-embed {
+    opacity: 0.9;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
 .projects-page{
     background-color: rgb(26, 24, 24);
     color: rgb(97, 136, 243);
@@ -133,11 +144,22 @@ form {
     text-align: center;
     padding: 10px;
     font-size: x-large;
+    font-weight: bolder;
 }
 
 .project-image, .project-image2 {
     max-width: fit-content;
     padding: 10px;
+}
+
+.project-github-link {
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: x-large;
+    flex-wrap: wrap;
+    color: rgb(191, 194, 3);
+    text-decoration: none;
 }
 
 /*Google Font Styling*/
