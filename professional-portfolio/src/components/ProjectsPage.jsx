@@ -1,3 +1,6 @@
+import picture from '../assets/screenshot1.png';
+import image from '../assets/screenshot2.png';
+
 const ProjectsPage = () => {
 
     return (
@@ -22,6 +25,8 @@ const ProjectsPage = () => {
                     <br />
                     This project showcases my ability to work with both front-end and back-end technologies, as well as my understanding of database management and user experience design. I am excited to continue building and improving this application, and I look forward to adding more features in the future!
                     </p>
+                    <img className="project-image" src={picture} width={600} height={400} alt="The Doggy Destination App"/>
+                    <img className="project-image2" src={image} width={600} height={400} alt="The Doggy Destination App - Category Selection"/>
                 </div>
             </div>
         </div>    
