@@ -1,6 +1,6 @@
 # 💻 Jillianne Schatz - Professional Portfolio
 
-![portfolio-background-pic](https://github.com/user-attachments/assets/2b8aa4f7-838b-4a53-85ea-4f108ca0a309)
+![abstract-background-pic](https://github.com/user-attachments/assets/312f08ac-c2d5-4f43-bfe5-f9552ba591d7)
 
 
 ## 💾 WELCOME!!
