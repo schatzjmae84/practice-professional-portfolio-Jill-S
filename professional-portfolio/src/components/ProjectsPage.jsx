@@ -1,5 +1,4 @@
-import picture from '../assets/screenshot1.png';
-import image from '../assets/screenshot2.png';
+import demo from '../assets/Jillianne Schatz - The Doggy Destination App.mp4';
 
 const ProjectsPage = () => {
 
@@ -23,14 +22,16 @@ const ProjectsPage = () => {
                     The front-end of the application is built using React, providing a responsive and user-friendly interface. The back-end is powered by Spring Boot, which handles data management and API requests. MySQL is used as the database to store user information, location details, and reviews.
                     <br />
                     <br />
-                    This project showcases my ability to work with both front-end and back-end technologies, as well as my understanding of database management and user experience design. I am excited to continue building and improving this application, and I look forward to adding more features in the future!
-                    <br />
-                    <br />
-                        <a href="https://github.com/schatzjmae84/swd-unit2-finalProject-Jill-S" target="_blank" rel="noopener noreferrer" className="project-github-link">Click here to visit my GitHub page for The Doggy Destination App!!
+                    This project showcases my ability to work with both front-end and back-end technologies, as well as my understanding of database management and user experience design. I am excited to continue building and improving this application, and I look forward to adding more features in the future!         
+                    </p>      
+                        <a href="https://github.com/schatzjmae84/swd-unit2-finalProject-Jill-S" target="_blank" rel="noopener noreferrer" className="project-github-link">GitHub page for The Doggy Destination App!!
                         </a>
-                    </p>                    
-                    <img className="project-image" src={picture} width={600} height={400} alt="The Doggy Destination App"/>
-                    <img className="project-image2" src={image} width={600} height={400} alt="The Doggy Destination App - Category Selection"/>
+                        <a href={demo} target="_blank" rel="noopener noreferrer" className="project-video-link">Watch below or download a demo of my app!!
+                        </a>
+                    <video className="project-video" controls>
+                        <source src={demo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>    

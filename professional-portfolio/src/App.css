@@ -123,7 +123,6 @@ form {
     color: white;
     font-family: "Mogra", system-ui;
     font-size: large;
-    text-align: center;
     opacity: 0.9;
     border: solid;
     border-color: white;
@@ -131,11 +130,13 @@ form {
     opacity: 0.85;
     padding: 15px;  
     display: flex;
-    text-align: left;
+    /* center children inside the flex container */
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* symmetric gap between images and content */
     margin: 15px 15px 25px 15px;
     border-radius: 5px;
     background-color: rgb(26, 24, 24);
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -147,19 +148,46 @@ form {
     font-weight: bolder;
 }
 
-.project-image, .project-image2 {
-    max-width: fit-content;
-    padding: 10px;
+/* Responsive: ensure screenshots stay inside their container on small screens */
+@media (max-width: 720px) {
+    /* Let project container stack vertically and fill width */
+    .project-image-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Remove floats for page containers on small screens */
+    .projects-page {
+        float: none;
+        width: auto;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 }
 
 .project-github-link {
-    align-content: center;
-    text-align: center;
-    padding: 10px;
     font-size: x-large;
     flex-wrap: wrap;
     color: rgb(191, 194, 3);
     text-decoration: none;
+    margin: 15px 15px 25px 15px;
+}
+
+/* Video demo styles */
+.project-video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px auto;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.project-video-link {
+    display: inline-block;
+    margin: 8px 15px;
+    color: rgb(191, 194, 3);
+    text-decoration: none;
+    font-size: x-large;
 }
 
 /*Google Font Styling*/
