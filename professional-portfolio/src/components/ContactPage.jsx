@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactPage = () => {
@@ -23,9 +25,24 @@ const ContactPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Thank you for your message! I will get back to you soon.");
-        // reset form data
-        setFormData({ name: "", email: "", message: "" });
+        if (!formData.name || !formData.email || !formData.message) {
+            toast.error("Please fill in all fields.", {
+                position: "top-center",
+                autoClose: 3000,
+                closeOnClick: true,
+                draggable: true,
+                transition: Bounce
+            });
+        } else {
+            setFormData({ name: "", email: "", message: "" });
+            toast.success("Thank you for your message! I will get back to you soon.", {
+                position: "top-center",
+                autoClose: 3000,
+                closeOnClick: true,
+                draggable: true,
+                transition: Bounce
+            });           
+        };
     };
 
     return (
@@ -45,7 +62,8 @@ const ContactPage = () => {
                     <textarea id="message" name="message" rows="5" placeholder="Please, enter message here" value={formData.message} onChange={handleChange}></textarea>
                     </label>
                     <button className="form-submit" type="submit">Submit</button>
-                </form>                        
+                </form>
+                <ToastContainer />                        
             </div>
         </div>
     );
