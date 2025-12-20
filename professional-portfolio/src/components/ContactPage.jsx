@@ -19,32 +19,33 @@ const ContactPage = () => {
                 ...prevData,
                 [name]: value
             }));
-        };    
+        };   
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("Thank you for your message! I will get back to you soon.");
+        // reset form data
+        setFormData({ name: "", email: "", message: "" });
+    };
 
     return (
         <div className="contact-page">
             <h2>{contact}</h2>
-            <header>
-                <h1>Contact Me</h1>
-            </header>
-            <p>If you would like to get in touch with me, please use the contact form below, and I will respond as soon as possible. I look forward to hearing from you!</p>
             <div>
                 <h3>Contact Form</h3>
-                <form>
+                <p>If you would like to get in touch with me, please use the contact form below, and I will respond as soon as possible. I look forward to hearing from you!</p>
+                <form onSubmit={handleSubmit} className="contact-form">
                     <label>Name:
                     <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
-                    </label><br />
+                    </label>
                     <label>Email:
                     <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-                    </label><br />
+                    </label>
                     <label>Message:
-                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Please, enter message here" value={formData.message} onChange={handleChange}></textarea>
-                    </label>  
+                    <textarea id="message" name="message" rows="5" placeholder="Please, enter message here" value={formData.message} onChange={handleChange}></textarea>
+                    </label>
+                    <button className="form-submit" type="submit">Submit</button>
                 </form>                        
-            </div>
-            <div>
-                <h3>Click the "Submit" button to send your contact form to me!</h3>
-                <button className="form-submit" type="submit" onClick={() => alert("Thank you for your message! I will get back to you soon.")}>Submit</button>
             </div>
         </div>
     );
