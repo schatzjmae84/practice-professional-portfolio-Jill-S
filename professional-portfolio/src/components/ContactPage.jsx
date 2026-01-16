@@ -51,7 +51,7 @@ const ContactPage = () => {
             <div>
                 <h3>Contact Form</h3>
                 <p>If you would like to get in touch with me, please use the contact form below, and I will respond as soon as possible. I look forward to hearing from you!</p>
-                <form className="contact-form" netlify>
+                <form className="contact-form" name='contact' netlify>
                     <label>Name:
                     <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
                     </label>
