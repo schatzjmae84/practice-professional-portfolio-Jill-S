@@ -7,11 +7,13 @@ import Footer from './components/Footer';
 import ContactPage from './components/ContactPage';
 import AboutPage from './components/AboutPage';
 import ProjectsPage from './components/ProjectsPage'; 
+import LazyBackground from './components/LazyBackground';
 
 function App() {
   
   return (
     <>
+      <LazyBackground imageUrl="/portfolio-background-pic.jpg" placeholder="#0e0d0dff" alt="Background" />
       <Header />
       <main> 
         <Router>
