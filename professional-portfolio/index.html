@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <style>
+      body {
+        padding: 10px;
+        background-image: url('/portfolio-background-pic.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 100%;
+      }
+    </style>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,19 +20,7 @@
     <title>My Professional Portfolio Page</title>
   </head>
   <body>    
-    <div id="root">
-      <div class="app-loading">Loading...</div>
-      <style>
-        .app-loading {
-          color: white;
-          background: #121212;
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      </style>
-    </div>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
