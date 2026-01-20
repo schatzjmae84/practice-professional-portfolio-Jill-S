@@ -74,8 +74,9 @@ const ContactPage = () => {
             <div>
                 <h3>Contact Form</h3>
                 <p>If you would like to get in touch with me, please use the contact form below, and I will respond as soon as possible. I look forward to hearing from you!</p>
-                <form className="contact-form" name='contact' method='POST' data-netlify="true" onSubmit={handleSubmit}>
+                <form className="contact-form" name='contact' method='POST' data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="bot-field" />
                     <label>Name:
                     <input type="text" name="name" value={name} onChange={handleChange} required />
                     </label>
