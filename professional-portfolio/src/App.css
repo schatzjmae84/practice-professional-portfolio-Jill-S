@@ -1,12 +1,9 @@
-
-
 .about-me{
     background-color: rgba(26,24,24,0.90); /* keeps gray with opacity */
     border: 2px solid white;
     color: rgb(97, 136, 243);
-    max-width: 1100px;
     padding: 15px;
-    margin: 15px;
+    margin: 15px 15px 25px 15px;
     float: left;
     border: solid;
     border-color: white;
@@ -15,24 +12,82 @@
     font-weight: 400;
     font-style: normal;
     font-size: x-large;
+    opacity: 0.9;
+    display: block;
     border-radius: 5px;
 }
 
 .home-page {
     display: flex;
+    flex: 1 0 auto;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
+    gap: 24px;
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto 32px;
 }
 
 .profile-pic {
     border-style: solid;
     border-color: white;
-    margin: 25px;
     padding: 25px;
     border-radius: 5px;
+    display: block;
+    width: 225px;        /* default desktop size */
+    max-width: 35vw;     /* keep it responsive */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
+.intro-text {
+  display: inline-block;    
+  flex: 0 1 auto;           
+  align-self: center;       
+  background-color:rgb(110, 4, 102);
+  padding: 12px 16px;  
+  border: dotted white 4px;     
+  border-radius: 8px;
+  text-align: left;
+}
+.intro-text h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+.intro-text h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ddd;
+}
+
+@media (max-width: 720px) {
+  .home-page {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 14px;
+    gap: 16px;
+  }
+
+  .profile-pic {
+    width: 45vw;      /* responsive smaller size */
+    max-width: 200px;
+  }
+
+  .intro-text {
+    display: inline-block;  
+    text-align: center;     
+    padding: 10px 12px;
+  }
+
+  .intro-text h1 {
+    font-size: 1.4rem;
+  }
+  .intro-text h2 {
+    font-size: 1rem;
+  }
+}
+  
 h1 {
     color: rgb(5, 5, 94);
     text-align: left;

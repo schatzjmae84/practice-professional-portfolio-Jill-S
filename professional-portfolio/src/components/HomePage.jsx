@@ -12,7 +12,7 @@ const HomePage = () => {
     return (
 
         <div className="home-page">  
-            <img className="profile-pic" src={pic} width="225" height="320" alt="My Profile Picture" />   
+            <img className="profile-pic" src={pic} width="225" height="320" alt="My Profile Picture" loading='lazy' />   
             <div className="intro-text">
                 <animated.h1 style={fadeIn}>Full Stack Software Developer</animated.h1>
                 <animated.h2 style={fadeIn}>Welcome to my professional portfolio!</animated.h2>

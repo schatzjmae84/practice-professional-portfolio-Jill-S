@@ -11,9 +11,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 1275px;
+	max-width: none;
+	width: 100%;
 	margin: 0 auto;
 	padding: 8px 16px;
+	box-sizing: border-box;
 }
 .brand {
 	font-weight: 700;
@@ -79,9 +81,9 @@
 /* Brand link: make the "JS" brand yellow and remove default underline */
 .site-header .brand a,
 .site-header .brand a:visited {
-  color: rgb(191, 194, 3); /* yellow-ish */
-  text-decoration: none; /* remove underline */
-  display: inline-block; /* keeps padding/line-height predictable */
+  color: rgb(191, 194, 3); 
+  text-decoration: none; 
+  display: inline-block; 
 }
 
 .site-header .brand a:hover,
@@ -100,6 +102,7 @@
 .home-page .intro-text h1,
 .home-page .intro-text h2 {
 	color: rgb(250, 62, 5);
+	font-weight: bolder;
 }
 
 /* Footer layout: center social icons within background */
@@ -129,6 +132,31 @@
   width: 36px !important;
   height: 36px !important;
   display: inline-flex !important;
+}
+
+/* Ensure the document fills the viewport */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Make the app a column flex container so footer sits at the bottom */
+.app-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main/page content grows to fill available space */
+.app-main,
+main,
+.page-content {
+  flex: 1 0 auto; 
+}
+
+/* Footer should not shrink */
+.app-footer {
+  flex-shrink: 0;
 }
 
 @media (max-width: 520px) {

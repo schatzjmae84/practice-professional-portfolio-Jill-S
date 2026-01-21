@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="site-footer"> 
             <div className="footer-inner">        
-                <div className="footer-text">&copy; 2025 Professional Portfolio | Jillianne Schatz</div>
+                <div className="footer-text">&copy; 2026 Professional Portfolio | Jillianne Schatz</div>
                 <div className="socials">
                     <SocialIcon 
                         url="https://www.linkedin.com/in/jillianne-schatz" 
