@@ -206,7 +206,7 @@ button {
     border-radius: 5px;
 }
 
-.project-image-container {
+.project-image-container, .new-project {
     color: white;
     font-family: "Mogra", system-ui;
     font-size: large;
