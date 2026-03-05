@@ -151,12 +151,14 @@ html, body, #root {
 .app-main,
 main,
 .page-content {
-  flex: 1 0 auto; 
+  flex: 1;  
+  padding-bottom: 2rem;
 }
 
 /* Footer should not shrink */
 .app-footer {
   flex-shrink: 0;
+  margin-top: auto;
 }
 
 @media (max-width: 520px) {
