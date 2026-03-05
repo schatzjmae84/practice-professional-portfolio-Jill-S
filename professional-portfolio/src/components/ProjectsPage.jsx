@@ -7,10 +7,11 @@ const ProjectsPage = () => {
         <div>
             <div className="projects-page">
                 <h3>Projects</h3>
-                <p>Welcome to my Projects Page! On this page, I am displaying all of the projects that I have worked on, including a web application I have developed. This project highlights my skills in full-stack development, problem-solving, and creativity.
-                <br />
-                <br />
-                Feel free to explore and reach out on my contact page if you have any questions or would like to collaborate!  There will be more projects posted here soon, so feel free to check back anytime!! &#128522;
+                <p>
+                    Welcome to my Projects Page! On this page, I am displaying all of the projects that I have worked on, including a web application I have developed. This project highlights my skills in full-stack development, problem-solving, and creativity.
+                    <br />
+                    <br />
+                    Feel free to explore and reach out on my contact page if you have any questions or would like to collaborate!  There will be more projects posted here soon, so feel free to check back anytime!! &#128522;
                 </p>
             </div>
             <div>                   

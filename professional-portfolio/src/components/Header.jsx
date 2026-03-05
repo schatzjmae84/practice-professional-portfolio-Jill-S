@@ -16,7 +16,6 @@ const Header = () => {
 					<a href="/projects">Projects</a>
 					<a href="/contact">Contact</a>
 				</nav>
-
 				<button
 					className="hamburger"
 					aria-label={open ? "Close menu" : "Open menu"}
